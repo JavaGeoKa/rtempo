@@ -1,0 +1,32 @@
+server:
+  port: 8888
+
+
+bot:
+  name: RTempoBot
+  token: 1827252410:AAFsONdL3jgVNvE3fBk0qnMwqffXtBWCnok
+
+logging:
+  level:
+    ROOT: INFO
+  file: logs/app.log
+
+
+spring:
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://188.225.34.62:4999/postgres
+    username: postgres
+    password: pocD7JCFUYCRVGqUAXgZLmtSVjjHdnfM15Nd277647560983ddf
+    hikari:
+      connectionTimeout: 20000
+      maximumPoolSize: 5
